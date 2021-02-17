@@ -1,5 +1,5 @@
 # dbs
-dbs project
+dbs project ::
 Project Structure ::  
 src/main/java : setup and page api's.
 src/test/java/dbs : dbs tests.
