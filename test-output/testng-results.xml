@@ -42,12 +42,12 @@
 ]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-02-17T22:20:53 IST" name="Suite" finished-at="2021-02-17T22:21:16 IST" duration-ms="23087">
+  <suite started-at="2021-02-17T22:46:51 IST" name="Suite" finished-at="2021-02-17T22:47:15 IST" duration-ms="23338">
     <groups>
     </groups>
-    <test started-at="2021-02-17T22:20:53 IST" name="Test" finished-at="2021-02-17T22:21:16 IST" duration-ms="23087">
+    <test started-at="2021-02-17T22:46:51 IST" name="Test" finished-at="2021-02-17T22:47:15 IST" duration-ms="23338">
       <class name="dbs.CompareCreditCards">
-        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:dbs.CompareCreditCards@4e268090]" started-at="2021-02-17T22:20:53 IST" name="initializeTestBaseSetup" finished-at="2021-02-17T22:21:09 IST" duration-ms="16018" status="PASS">
+        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:dbs.CompareCreditCards@53aad5d5]" started-at="2021-02-17T22:46:51 IST" name="initializeTestBaseSetup" finished-at="2021-02-17T22:47:08 IST" duration-ms="16119" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,11 +63,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTestBaseSetup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:dbs.CompareCreditCards@4e268090]" started-at="2021-02-17T22:21:09 IST" name="setUp" finished-at="2021-02-17T22:21:09 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:dbs.CompareCreditCards@53aad5d5]" started-at="2021-02-17T22:47:08 IST" name="setUp" finished-at="2021-02-17T22:47:08 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="compareCreditCardsDetails()[pri:0, instance:dbs.CompareCreditCards@4e268090]" started-at="2021-02-17T22:21:09 IST" name="compareCreditCardsDetails" finished-at="2021-02-17T22:21:15 IST" duration-ms="6314" status="PASS">
+        <test-method signature="compareCreditCardsDetails()[pri:0, instance:dbs.CompareCreditCards@53aad5d5]" started-at="2021-02-17T22:47:08 IST" name="compareCreditCardsDetails" finished-at="2021-02-17T22:47:14 IST" duration-ms="6561" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully displayed card details : It's the fastest way to fly anywhere of card - DBS Altitude Visa Signature Card
@@ -111,7 +111,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- compareCreditCardsDetails -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:dbs.CompareCreditCards@4e268090]" started-at="2021-02-17T22:21:15 IST" name="tearDown" finished-at="2021-02-17T22:21:16 IST" duration-ms="731" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dbs.CompareCreditCards@53aad5d5]" started-at="2021-02-17T22:47:14 IST" name="tearDown" finished-at="2021-02-17T22:47:15 IST" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
