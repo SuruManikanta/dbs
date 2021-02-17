@@ -26,15 +26,12 @@ public class Cards extends BasePage{
 		String actualCardDetails = getDisplayedText("//div[text()='"+card+"']//ancestor::div[contains(@id,'card')]//div[@class='section-seperator'][1]");
 		String expectedCardDetails[] = cardDetails.split(";");
 		for (String expected : expectedCardDetails) {
-			if(actualCardDetails.contains(expected)) {
-				Assert.assertTrue("Successfully displayed card details : "+expected+" of card - "+card, true);
-				Reporter.log("Successfully displayed card details : "+expected+" of card - "+card, true);
+			if(!actualCardDetails.contains(expected)) {
+				Reporter.log("Failed to display Card-"+card+" details : "+expected+"\n", true);
+				Assert.fail("Failed to display Card-"+card+" details : "+expected);
 			}
-			else {
-				Reporter.log("Failed to display Card-"+card+" details : "+expected, false);
-				Assert.assertTrue("Failed to display Card-"+card+" details : "+expected, false);
-			}
+			Reporter.log("Successfully displayed card details : "+expected+" of card - "+card+"\n", true);
 		}
-		
+
 	}
 }
