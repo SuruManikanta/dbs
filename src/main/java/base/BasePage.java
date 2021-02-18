@@ -35,7 +35,4 @@ public class BasePage {
 		else
 			return null;
 	}
-	public void wait(int time) throws InterruptedException {
-		Thread.sleep(time);
-	}
 }

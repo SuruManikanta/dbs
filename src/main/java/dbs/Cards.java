@@ -13,7 +13,6 @@ public class Cards extends BasePage{
 	}
 	public void compareCards(String card1,String card2){
 		try {
-			wait(3000);
 			click(getCard(card1));
 			click(getCard(card2));
 			click("//button[@id='cardCompareBtn']");
