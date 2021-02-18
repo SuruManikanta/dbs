@@ -11,16 +11,19 @@ public class Cards extends BasePage{
 	public Cards(WebDriver driver) {
 		super(driver);
 	}
-	public void navigateToCreditCards() {
-		click("//div[contains(@class,'navbar-links-left')]//a[text()='Cards']");
-		click("//a[text()='Credit Cards']");
+	public void compareCards(String card1,String card2){
+		try {
+			wait(3000);
+			click(getCard(card1));
+			click(getCard(card2));
+			click("//button[@id='cardCompareBtn']");
+		}
+		catch(Exception e) {
+			Reporter.log(e.getMessage());
+		}
 	}
-	public void compareCards(String card1,String card2) throws InterruptedException {
-		navigateToCreditCards();
-		Thread.sleep(3000);
-		click("//div[text()='"+card1+"']//ancestor::div[@class='cardContainer']//label");
-		click("//div[text()='"+card2+"']//ancestor::div[@class='cardContainer']//label");
-		click("//button[@id='cardCompareBtn']");
+	public String getCard(String card) {
+		return "//div[text()='"+card+"']//ancestor::div[@class='cardContainer']//label";
 	}
 	public void verifyCardDetails(String card,String cardDetails) {
 		String actualCardDetails = getDisplayedText("//div[text()='"+card+"']//ancestor::div[contains(@id,'card')]//div[@class='section-seperator'][1]");
