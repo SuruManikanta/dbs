@@ -48,6 +48,7 @@ public class BaseSetup {
 		System.out.println("Launching Firefox browser..");
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.navigate().to(appURL);
 		return driver;
 	}
